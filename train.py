@@ -227,7 +227,7 @@ if __name__ == "__main__":
 
     summary(model, input_size=(90, 13), device=device.type)
     
-    optimizer = optim.Adam(model.parameters(), lr=0.001)
+    optimizer = optim.Adam(model.parameters(), lr=args.lr)
     
      # 记录训练开始时间
     start_time = time.time()
